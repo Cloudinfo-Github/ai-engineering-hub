@@ -1,0 +1,72 @@
+."* {"{
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+}
+
+/* Code Editor Styles */
+.code-editor {
+    background-color: #272727;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+/* Module Cards */
+.module-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.2s;
+}
+.module-card:hover {
+    transform: scale(1.02);
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 5px;
+    color: white;
+    font-size: 0.85rem;
+}
+.badge.python { background-color: #3776AB; }
+.badge.jupyter { background-color: #DA672E; }
+.badge.llm { background-color: #A15A4D; }
+.badge.rag { background-color: #A26D3D; }
+.badge.agent { background-color: #32A852; }
+
+/* Dark Theme Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #181818;
+        color: #f4f4f4;
+    }
+    .code-editor {
+        background-color: #1E1E1E;
+    }
+    .module-card {
+        background: #292929;
+        border: 1px solid #444;
+    }
+}
